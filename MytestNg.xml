@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="searchTests">
+    <test name="positive001">
+        <classes>
+            <class name="MyLab.GoogleSearchTests">
+                <parameter name="queryForSearch" value="Portnov Computer School"/>
+                <methods>
+                    <include name="test001Param"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="positive002">
+        <classes>
+            <class name="MyLab.GoogleSearchTests">
+                <parameter name="queryForSearch" value="Portnov Computer"/>
+                <methods>
+                    <include name="test001Param"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
